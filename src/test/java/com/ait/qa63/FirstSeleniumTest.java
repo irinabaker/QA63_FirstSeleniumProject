@@ -2,6 +2,7 @@ package com.ait.qa63;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 
 public class FirstSeleniumTest {
@@ -55,7 +56,7 @@ public class FirstSeleniumTest {
         System.out.println("*******************Test");System.out.println("Google is opened!");
     }
     //after - tearDown
-    @AfterMethod(enabled = true)
+    @AfterMethod(enabled = false)
     public void tearDown() {
         System.out.println("***************AfterMethod");
       //  driver.quit();// all tabs & close browser
